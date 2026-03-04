@@ -6,20 +6,18 @@ body {
     margin: 0;
 }
 
-/* Você pode usar a tag header ou a classe .topo que você criou */
 header, .topo {
     padding: 16px;
     background: #F5A3A3;
     color: #fff;
 }
 
-/* Estilização dos Painéis [cite: 40, 88] */
 .painel {
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,.1); /* Corrigido: era boxshadow */
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
     padding: 20px;
-    margin: 20px; /* Espaçamento entre os quadros */
+    margin: 20px; 
 }
 
 .painel h2 {
@@ -28,7 +26,6 @@ header, .topo {
     margin-top: 0;
 }
 
-/* Interação e Acessibilidade [cite: 55, 56, 89] */
 .footer-link {
     text-decoration: none;
     margin-right: 15px;
@@ -46,12 +43,11 @@ header, .topo {
     outline: 2px solid #F5A3A3;
 }
 
-/* Links Externos e Indicador Visual [cite: 61, 68, 90] */
 a[href^="http"] {
     color: #F5A3A3;
     font-weight: bold;
 }
 
 a[href^="http"]::before {
-    content: "🌐 "; /* Adiciona um ícone antes do link externo */
+    content: "🌐 "; 
 }
