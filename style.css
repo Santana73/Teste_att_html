@@ -1,9 +1,9 @@
-/* Configurações Globais */
+
 body {
     font-family: Arial, sans-serif;
     background: #f4f4f4; /* Um cinza claro para destacar os painéis brancos */
     color: #222;
-    margin: 0; /* Obrigatório conforme o critério de aceite  */
+    margin: 0;
 }
 
 /* Você pode usar a tag header ou a classe .topo que você criou */
