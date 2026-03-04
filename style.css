@@ -1,58 +1,57 @@
-header {
-background:#a3c9f5;
-padding:16px; }
+/* Configurações Globais */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4; /* Um cinza claro para destacar os painéis brancos */
+    color: #222;
+    margin: 0; /* Obrigatório conforme o critério de aceite  */
+}
 
+/* Você pode usar a tag header ou a classe .topo que você criou */
+header, .topo {
+    padding: 16px;
+    background: #F5A3A3;
+    color: #fff;
+}
 
-/* Título do painel */
+/* Estilização dos Painéis [cite: 40, 88] */
+.painel {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1); /* Corrigido: era boxshadow */
+    padding: 20px;
+    margin: 20px; /* Espaçamento entre os quadros */
+}
+
 .painel h2 {
-  margin-top: 0;
-  color: #010b9c;
-  font-size: 1.5rem;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 0;
 }
 
-
-/* Links do rodapé */
+/* Interação e Acessibilidade [cite: 55, 56, 89] */
 .footer-link {
-  display: inline-block;
-  padding: 8px 12px;
-  margin: 4px;
-  color: #4a90e2;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: all 0.3s ease;
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 5px 10px;
+    transition: 0.3s;
 }
 
-/* :hover — quando o mouse passa sobre o link */
 .footer-link:hover {
-  color: #fff;
-  background: #a3d7f5;
+    color: #fff;
+    background: #F5A3A3;
+    border-radius: 4px;
 }
 
-/* :focus — quando o link recebe foco via teclado */
 .footer-link:focus {
-  outline: 2px solid #F5A3A3;
-  outline-offset: 2px;
+    outline: 2px solid #F5A3A3;
 }
 
-
-
-/* Seleciona todos os <a> cujo href começa com "http" */
+/* Links Externos e Indicador Visual [cite: 61, 68, 90] */
 a[href^="http"] {
-  color: #000000;
-  font-weight: bold;
-  text-decoration: underline;
+    color: #F5A3A3;
+    font-weight: bold;
 }
 
-/* Mantém a interação já configurada */
-a.footer-link:hover {
-  color: #fff;
-  background: #a3d7f5;
+a[href^="http"]::before {
+    content: "🌐 "; /* Adiciona um ícone antes do link externo */
 }
-
-a.footer-link:focus {
-  outline: 2px solid #a3d7f5;
-  outline-offset: 2px;
-}
-
